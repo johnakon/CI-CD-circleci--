@@ -7,8 +7,12 @@
     "test": "test"
   },
   "scripts": {
-    "start": "nodemon",
-    "test": "jest"
+    "test": "jest",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "jest-coverage": "npm run test -- --coverage"
+  },
+  "jest": {
+    "collectCoverage": true
   },
   "repository": {
     "type": "git",
@@ -21,6 +25,7 @@
   },
   "homepage": "https://github.com/johnakon/Grading-system-circleci#readme",
   "devDependencies": {
+    "coveralls": "^3.0.9",
     "jest": "^25.1.0",
     "nodemon": "^2.0.2"
   },
