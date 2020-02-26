@@ -1,0 +1,28 @@
+{
+  "name": "grading-system-circleci",
+  "version": "1.0.0",
+  "description": "Grading system circle ci",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "nodemon",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnakon/Grading-system-circleci.git"
+  },
+  "author": "Akonya John",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnakon/Grading-system-circleci/issues"
+  },
+  "homepage": "https://github.com/johnakon/Grading-system-circleci#readme",
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {}
+}
