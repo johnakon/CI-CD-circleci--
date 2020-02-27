@@ -7,6 +7,7 @@ const passmark = require("../index");
 //   expect(passmark.isValidate()).toBe(true);
 // });
 
-test("is the mark above the passmark", () => {
-  expect(passmark.computeScore()).toBe("B");
+test("is the mark above the passmark", async() => {
+  let passMe = await passmark.computeScore()
+  expect(passMe).toBe("B");
 });
