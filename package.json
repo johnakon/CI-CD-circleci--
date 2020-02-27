@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "start": "nodemon",
     "test": "jest",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "jest-coverage": "npm run test -- --coverage"
