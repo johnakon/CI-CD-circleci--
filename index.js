@@ -22,6 +22,6 @@ app.get("/", (req, res) => {
 });
 
 //port
-app.listen(port, async () => {
-  await console.log("up at " + port);
+app.listen(port, () => {
+  console.log("up at " + port);
 });
