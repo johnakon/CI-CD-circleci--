@@ -5,10 +5,6 @@ const port = process.env.PORT || 4000;
 const publicDir = path.join(__dirname, "/public");
 app.use(express.static(publicDir));
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
 const marks = require("./models/marksModel");
 const student = require("./models/studentModel");
 
@@ -21,7 +17,11 @@ const johnGrade = new marks("Akonya", "P.E", 70);
 
 module.exports = johnGrade;
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 //port
-app.listen(port, () => {
-  console.log("up at " + port);
+app.listen(port, async () => {
+  await console.log("up at " + port);
 });
