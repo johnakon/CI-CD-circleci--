@@ -6,7 +6,7 @@ const publicDir = path.join(__dirname, "./public");
 app.use(express.static(publicDir));
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Hello World!");
 });
 
 const marks = require("./models/marksModel");
